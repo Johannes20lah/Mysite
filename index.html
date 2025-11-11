@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No Plan B SIA</title>
+<style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body, html {height: 100%; font-family: 'Arial', sans-serif; scroll-behavior: smooth;}
+    section {height: 100vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; padding: 60px;}
+    h1 {font-size: 4em; margin-bottom: 20px;}
+    h2 {font-size: 2.5em; margin-bottom: 20px;}
+    p {font-size: 1.5em; line-height: 1.6; max-width: 900px; margin: 0 auto;}
+    nav {position: fixed; top: 0; width: 100%; background-color: rgba(180, 0, 0, 0.6); display: flex; justify-content: center; z-index: 1000;}
+    nav ul {list-style: none; display: flex;}
+    nav ul li {margin: 0 25px;}
+    nav ul li a {color: white; text-decoration: none; font-size: 1.3em; font-weight: bold; transition: color 0.3s;}
+    nav ul li a:hover {color: #ffdddd;}
+
+    /* Фоновые изображения и затемнение */
+    .overlay {
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.6);
+        z-index: 1;
+    }
+    section .content {position: relative; z-index: 2;}
+
+    #home {
+        background: url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0') no-repeat center center/cover;
+        position: relative;
+    }
+
+    #about {
+        background-color: #1a1a1a;
+        display: flex; justify-content: space-around; align-items: center; text-align: left;
+    }
+    #about img {width: 40%; border-radius: 10px;}
+    #about .text {width: 50%;}
+
+    #services {
+        background-color: #2b2b2b;
+        flex-direction: column;
+    }
+    .service-block {margin: 30px 0;}
+
+    #advantages {
+        background-color: #1f1f1f;
+        flex-direction: column;
+    }
+    .advantage {margin: 20px 0;}
+
+    #process {
+        background-color: #292929;
+        flex-direction: column;
+    }
+    .step {margin: 20px 0;}
+
+    #contact {
+        background: url('https://images.unsplash.com/photo-1617729421095-8672a6d645ed?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1169') no-repeat center center/cover;
+        position: relative;
+        flex-direction: column;
+    }
+    form {margin-top: 30px;}
+    input, textarea {
+        padding: 15px;
+        margin: 10px;
+        font-size: 1.1em;
+        width: 300px;
+        border: none;
+        border-radius: 5px;
+    }
+    button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: none;
+        background-color: rgba(255,50,50,0.8);
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    button:hover {background-color: rgba(255,80,80,1);}
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#home">Sākums</a></li>
+        <li><a href="#about">Par mums</a></li>
+        <li><a href="#services">Pakalpojumi</a></li>
+        <li><a href="#contact">Kontakti</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>No Plan B SIA</h1>
+        <p>Mēs palīdzam uzņēmumiem augt gudrāk, plānot drosmīgāk un veidot zīmolus, kas paliek atmiņā. No stratēģijas līdz izpildei — mēs kļūstam par jūsu ilgtermiņa atbalsta komandu.</p>
+    </div>
+</section>
+
+<section id="about">
+    <div class="text">
+        <h2>Mūsu stāsts</h2>
+        <p>No Plan B SIA ir biznesa atbalsta un mārketinga konsultāciju uzņēmums, kas dibināts Rīgā.  
+        Mēs palīdzam uzņēmumiem atrast savu balsi tirgū, definēt mērķus un sasniegt tos ar precīzu stratēģiju.  
+        Mūsu komanda apvieno radošu domāšanu ar datu analīzi, lai pieņemtu lēmumus, kas patiešām strādā.  
+        Sadarbībā ar klientiem mēs kļūstam par daļu no viņu komandas, radot risinājumus ar ilgtermiņa ietekmi.  
+        Mēs ticam — plāns B nav vajadzīgs, ja plāns A ir izstrādāts perfekti.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1703668929798-67cab2e41f6b?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=600" alt="Office">
+</section>
+
+<section id="services">
+    <div class="content">
+        <h2>Mūsu pakalpojumi</h2>
+        <div class="service-block">
+            <h3>Biznesa atbalsta risinājumi</h3>
+            <p>Sniedzam strukturētu atbalstu uzņēmumu ikdienas darbībā — no stratēģijas plānošanas līdz procesu optimizācijai, lai palīdzētu jums koncentrēties uz izaugsmi.</p>
+        </div>
+        <div class="service-block">
+            <h3>Mārketinga stratēģijas</h3>
+            <p>Izstrādājam un īstenojam kampaņas, kas balstītas uz datiem, radošumu un tirgus izpratni. Mēs palīdzam jūsu zīmolam sasniegt īsto auditoriju.</p>
+        </div>
+        <div class="service-block">
+            <h3>Zīmola konsultācijas</h3>
+            <p>No idejas līdz pilnvērtīgam zīmolam — palīdzam veidot identitāti, kas rada uzticību un iedvesmo jūsu klientus.</p>
+        </div>
+    </div>
+</section>
+
+<section id="advantages">
+    <div class="content">
+        <h2>Kāpēc izvēlēties mūs</h2>
+        <div class="advantage">
+            <h3>Stratēģiska domāšana</h3>
+            <p>Mēs ne tikai piedāvājam idejas, bet arī izveidojam konkrētu ceļu to realizācijai — ar mērķiem, termiņiem un mērāmiem rezultātiem.</p>
+        </div>
+        <div class="advantage">
+            <h3>Individuāla pieeja</h3>
+            <p>Katra sadarbība sākas ar jūsu biznesa izpratni. Mēs pielāgojam risinājumus jūsu vajadzībām, nevis piedāvājam gatavus modeļus.</p>
+        </div>
+        <div class="advantage">
+            <h3>Ilgtspējīgi rezultāti</h3>
+            <p>Mūsu mērķis nav tikai īslaicīgi panākumi, bet gan stabila attīstība, kas palīdz jūsu uzņēmumam augt ilgtermiņā.</p>
+        </div>
+    </div>
+</section>
+
+<section id="process">
+    <div class="content">
+        <h2>Kā mēs strādājam</h2>
+        <div class="step">
+            <h3>1. Analīze un izpratne</h3>
+            <p>Mēs izpētām jūsu uzņēmuma situāciju, tirgu un mērķauditoriju, lai izveidotu precīzu pamatu stratēģijai.</p>
+        </div>
+        <div class="step">
+            <h3>2. Stratēģijas izstrāde</h3>
+            <p>Balstoties uz datiem un pieredzi, veidojam personalizētu plānu ar skaidriem mērķiem un izpildes posmiem.</p>
+        </div>
+        <div class="step">
+            <h3>3. Realizācija un atbalsts</h3>
+            <p>Mēs palīdzam īstenot stratēģiju praksē un nodrošinām nepārtrauktu atbalstu, lai rezultāti būtu noturīgi un efektīvi.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Sazinieties ar mums</h2>
+        <p>Mēs ticam, ka katrs lielisks bizness sākas ar sarunu. Rakstiet mums — un kopā mēs atradīsim risinājumu jūsu izaicinājumiem.</p>
+        <p><strong>E-pasts:</strong> inbox@noplanb.pro<br><strong>Adrese:</strong> Vilandes iela 3-3, Rīga, LV-1010</p>
+        <form>
+            <input type="text" placeholder="Jūsu vārds" required><br>
+            <input type="email" placeholder="Jūsu e-pasts" required><br>
+            <textarea placeholder="Jūsu ziņojums" rows="4" required></textarea><br>
+            <button type="submit">Nosūtīt</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
